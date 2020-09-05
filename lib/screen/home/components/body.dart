@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_test/screen/home/components/categories.dart';
 import 'package:flutter_ui_test/size_config.dart';
 
+<<<<<<< HEAD
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,4 +35,8 @@ class Body extends StatelessWidget {
       ],
     ));
   }
+=======
+Widget Body() {
+
+>>>>>>> aeae94b96784501e2ba013b484a438098059d3ef
 }
