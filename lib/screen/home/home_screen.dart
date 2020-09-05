@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_ui_test/config/size_config.dart';
+import 'file:///D:/flutter_project/flutter_ui_test/lib/size_config.dart';
 import 'package:flutter_ui_test/mybottomnavbar.dart';
 import 'components/body.dart';
 
