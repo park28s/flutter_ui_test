@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
               // - flex 옵션으로 공간을 우선적으로 배정할수 있음
                 child: Padding(
                   padding: EdgeInsets.symmetric(
-                      horizontal: SizeConfig.difaultSize * 2), //대칭적인, 조와로운
+                      horizontal: SizeConfig.defaultSize * 2), //대칭적인, 조와로운
                   child: GridView.builder(
                     //자동 리스트뷰
                       itemCount: recipeBundles.length,
@@ -25,7 +25,7 @@ class Body extends StatelessWidget {
                         mainAxisSpacing: 20, //메인축공간간격
                         crossAxisSpacing: //크로스축공간간격
                         SizeConfig.orientation == Orientation.landscape
-                            ? SizeConfig.difaultSize * 2
+                            ? SizeConfig.defaultSize * 2
                             : 0,
                         childAspectRatio: 1.65, //비율설정
                       ),

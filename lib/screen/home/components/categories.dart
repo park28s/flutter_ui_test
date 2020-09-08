@@ -16,10 +16,10 @@ class _CategoriesState extends State<Categories> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: SizeConfig.difaultSize = 2),
+      padding: EdgeInsets.symmetric(vertical: SizeConfig.defaultSize = 2),
       // 대칭 패딩값, 수직으로 SizeConfig difault값을 2로 정함
       child: SizedBox(
-        height: SizeConfig.difaultSize = 3.5,
+        height: SizeConfig.defaultSize = 3.5,
         child: ListView.builder(
             scrollDirection: Axis.horizontal, // 스크롤방향 : 축, 세로
             itemCount: categories.length, // 몇개를 나열할 것인지 : 카테고리 길이 많큼 나열
@@ -40,14 +40,14 @@ Widget buildcategoriItem(int index) {
     },
     child: Container(
       alignment: Alignment.center,
-      margin: EdgeInsets.only(left: SizeConfig.difaultSize = 2),
+      margin: EdgeInsets.only(left: SizeConfig.defaultSize = 2),
       padding: EdgeInsets.symmetric(
-          horizontal: SizeConfig.difaultSize = 2,
-          vertical: SizeConfig.difaultSize = 0.5),
+          horizontal: SizeConfig.defaultSize = 2,
+          vertical: SizeConfig.defaultSize = 0.5),
       decoration: BoxDecoration(
           color: selectedIndex == index ? Color(0xFFEFF3EE) : Colors
               .transparent,
-          borderRadius: BorderRadius.circular(SizeConfig.difaultSize = 1.6)
+          borderRadius: BorderRadius.circular(SizeConfig.defaultSize = 1.6)
       ),
       child: Text(
         categories[index],

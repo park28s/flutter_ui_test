@@ -26,7 +26,7 @@ class ProfileScreen extends StatelessWidget {
           child: Text('Edit',
           style: TextStyle(
             color: Colors.white,
-            fontSize: SizeConfig.difaultSize * 1.6,
+            fontSize: SizeConfig.defaultSize * 1.6,
             fontWeight: FontWeight.bold
           ),
           ))
