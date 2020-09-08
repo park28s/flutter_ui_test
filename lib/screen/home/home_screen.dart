@@ -7,7 +7,7 @@ import 'components/body.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Sizeconfig().init(context);
+    SizeConfig().init(context);
     return Scaffold(
       appBar: buildAppBar(),
       body: Body(),
