@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'file:///D:/flutter_project/flutter_ui_test/lib/constants.dart';
-import 'file:///D:/flutter_project/flutter_ui_test/lib/size_config.dart';
+import 'package:flutter_ui_test/constants.dart';
+import 'package:flutter_ui_test/size_config.dart';
 
 class Categories extends StatefulWidget {
   @override
@@ -31,31 +31,32 @@ class _CategoriesState extends State<Categories> {
   }
 
 
-Widget buildcategoriItem(int index) {
-  return GestureDetector( // 제스처디텍터 = 제스처 검출기
-    onTap: () {
-      setState(() {
-        selectedIndex = index;
-      });
-    },
-    child: Container(
-      alignment: Alignment.center,
-      margin: EdgeInsets.only(left: SizeConfig.defaultSize = 2),
-      padding: EdgeInsets.symmetric(
-          horizontal: SizeConfig.defaultSize = 2,
-          vertical: SizeConfig.defaultSize = 0.5),
-      decoration: BoxDecoration(
-          color: selectedIndex == index ? Color(0xFFEFF3EE) : Colors
-              .transparent,
-          borderRadius: BorderRadius.circular(SizeConfig.defaultSize = 1.6)
-      ),
-      child: Text(
-        categories[index],
-        style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: selectedIndex == index ? KPrimaryColor : Color(0xFFC2C2B5)
+  Widget buildcategoriItem(int index) {
+    return GestureDetector( // 제스처디텍터 = 제스처 검출기
+      onTap: () {
+        setState(() {
+          selectedIndex = index;
+        });
+      },
+      child: Container(
+        alignment: Alignment.center,
+        margin: EdgeInsets.only(left: SizeConfig.defaultSize = 2),
+        padding: EdgeInsets.symmetric(
+            horizontal: SizeConfig.defaultSize = 2,
+            vertical: SizeConfig.defaultSize = 0.5),
+        decoration: BoxDecoration(
+            color: selectedIndex == index ? Color(0xFFEFF3EE) : Colors
+                .transparent,
+            borderRadius: BorderRadius.circular(SizeConfig.defaultSize = 1.6)
+        ),
+        child: Text(
+          categories[index],
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: selectedIndex == index ? KPrimaryColor : Color(0xFFC2C2B5)
+          ),
         ),
       ),
-    ),
-  );
+    );
+  }
 }

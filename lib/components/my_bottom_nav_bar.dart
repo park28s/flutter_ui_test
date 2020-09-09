@@ -9,13 +9,13 @@ import 'package:provider/provider.dart';
 class MyBottomNavBar extends StatelessWidget {
   const MyBottomNavBar({
     Key key,
-  }) :super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     double defaultSize = SizeConfig.defaultSize;
     return Consumer<NavItems>(
-        builder: (context, navItems, child) =>
+        builder: (context, navItems, child,) =>
             Container(
               padding: EdgeInsets.symmetric(horizontal: defaultSize * 3),
               decoration: BoxDecoration(

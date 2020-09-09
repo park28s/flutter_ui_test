@@ -16,7 +16,7 @@ class RecipeBundle {
   });
 }
 
-List<RecipeBundle> recipeBunds = [
+List<RecipeBundle> recipeBundles = [
   RecipeBundle(
     id: 1,
     chefs: 16,

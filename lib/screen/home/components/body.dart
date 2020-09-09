@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_test/models/RecipeBundel.dart';
 import 'package:flutter_ui_test/screen/home/components/categories.dart';
+import 'package:flutter_ui_test/screen/home/components/recipe_bundel_card.dart';
 import 'package:flutter_ui_test/size_config.dart';
+
 
 class Body extends StatelessWidget {
   @override
