@@ -9,6 +9,7 @@ class NavItem {
 
   NavItem({this.id, this.icon, this.destination});
 
+// If there is no destination then it help us
   bool destinationChecker() {
     if (destination != null) {
       return true;
@@ -17,28 +18,39 @@ class NavItem {
   }
 }
 
+// If we made any changes here Provider package rebuid those widget those use this NavItems
 class NavItems extends ChangeNotifier {
+  // By default first one is selected
   int selectedIndex = 0;
 
   void chnageNavIndex({int index}) {
     selectedIndex = index;
+    // if any changes made it notify widgets that use the value
     notifyListeners();
   }
 
-  List items = [
-    NavItem(id: 1, icon: 'assets/icons/home.svg', destination: HomeScreen()),
+  List<NavItem> items = [
+    NavItem(
+      id: 1,
+      icon: "assets/icons/home.svg",
+      destination: HomeScreen(),
+    ),
     NavItem(
       id: 2,
-      icon: 'assets/icons/list.svg',
+      icon: "assets/icons/list.svg",
     ),
     NavItem(
       id: 3,
-      icon: 'assets/icons/camera.svg',
+      icon: "assets/icons/camera.svg",
     ),
     NavItem(
       id: 4,
-      icon: 'assets/icons/chef_nav.svg',
+      icon: "assets/icons/chef_nav.svg",
     ),
-    NavItem(id: 5, icon: 'assets/icons/user.svg', destination: ProfileScreen()),
+    NavItem(
+      id: 5,
+      icon: "assets/icons/user.svg",
+      destination: ProfileScreen(),
+    ),
   ];
 }

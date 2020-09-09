@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_test/components/my_bottom_nav_bar.dart';
 import 'package:flutter_ui_test/size_config.dart';
 import 'components/body.dart';

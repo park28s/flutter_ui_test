@@ -54,7 +54,7 @@ class RecipeBundelCard extends StatelessWidget {
                       buildInfoRow(
                         defaultSize,
                         iconSrc: "assets/icons/pot.svg",
-                        text: "${recipeBundle.recipe} Recipes",
+                        text: "${recipeBundle.recipes} Recipes",
                       ),
                       SizedBox(
                         height: defaultSize * 0.5,
@@ -74,7 +74,7 @@ class RecipeBundelCard extends StatelessWidget {
             ),
             AspectRatio(aspectRatio: 0.71, // 가로세로 비율, 화면 종횡비 설정
               child: Image.asset(
-                recipeBundle.imageSer,
+                recipeBundle.imageSrc,
                 fit: BoxFit.cover,
                 alignment: Alignment.centerLeft,
               ),

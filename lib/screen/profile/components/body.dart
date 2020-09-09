@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_test/screen/profile/components/info.dart';
 import 'package:flutter_ui_test/screen/profile/components/profile_menu_item.dart';
 import 'package:flutter_ui_test/size_config.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class Body extends StatelessWidget {
   @override

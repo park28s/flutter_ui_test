@@ -11,7 +11,7 @@ class Body extends StatelessWidget {
     return SafeArea(
       //IOS 와 안드로이드 환경에서 화면을 자동으로 인식하여 콘텐츠를 보호해주는 위젯
         child: Column(
-          children: [
+          children: <Widget> [
             Categories(),
             Expanded(
               //Row나 Column 같은 곳에서 원하는 widget을 남은 공간에서 넓게 표시하고 싶을때 사용하는 위젯
