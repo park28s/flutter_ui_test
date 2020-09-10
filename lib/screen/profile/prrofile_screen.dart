@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_test/components/my_bottom_nav_bar.dart';
 import 'package:flutter_ui_test/constants.dart';
-import 'package:flutter_ui_test/screen/home/components/body.dart';
+import 'package:flutter_ui_test/screen/profile/components/body.dart';
 import 'package:flutter_ui_test/size_config.dart';
 
 class ProfileScreen extends StatelessWidget {
