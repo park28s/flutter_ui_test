@@ -21,7 +21,7 @@ class _CategoriesState extends State<Categories> {
       child: SizedBox(
         height: SizeConfig.defaultSize * 3.5,
         child: ListView.builder(
-            scrollDirection: Axis.horizontal, // 스크롤방향 : 축, 세로
+            scrollDirection: Axis.horizontal, // 스크롤방향 : 축, 가로(수평선)
             itemCount: categories.length, // 몇개를 나열할 것인지 : 카테고리 길이 많큼 나열
             itemBuilder: (context, index) => buildcategoriItem(index)
             // ListView.builder는 itemBuiler: (context, index) 변수가 반드시 같이 사용되며, 이 변수는 categories 내용을 출력한다.

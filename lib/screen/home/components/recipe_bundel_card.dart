@@ -20,7 +20,7 @@ class RecipeBundelCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: recipeBundle.color,
-          borderRadius: BorderRadius.circular(defaultSize * 1.8),
+          borderRadius: BorderRadius.circular(defaultSize * 1.6),
         ),
         child: Row(
           children: [
